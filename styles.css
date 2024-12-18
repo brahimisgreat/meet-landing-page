@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.logo{
+    width: 118px;
+height: 28px;
+}
+
+.hero-container{
+    max-width: 433.003px;
+max-height: 160px;
+border: red;
+display: flex;
+margin-left: 20px;
+
+}
+
+
+.hero-left, .hero-right{
+width: 216px;
+height: 160px;
+}
+
+h1{
+    color: var(--color-slate-900, #28283D);
+text-align: center;
+
+font-family: "Red Hat Display";
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: 110%; /* 44px */
+}
+
+p{
+    color: var(--color-slate-600, #87879D);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* tablet/text-preset-4 */
+font-family: "Red Hat Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 24px */
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn1{
+    display: flex;
+    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    border-radius: 29px;
+background: var(--color-cyan-600, #4D96A9);
+color: white;
+}
+
+.btn2{
+    display: flex;
+    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    border-radius: 29px;
+background: var(--color-purple-600, #855FB1);
+color: white;
+}
+
+.lc{
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.line{
+    width: 1px;
+    height: var(--spacing-1000, 80px);
+    background: var(--color-slate-300, #D1D1DF);
+}
+
+.circle{
+    display: flex;
+width: var(--spacing-700, 56px);
+height: var(--spacing-700, 56px);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 999px;
+border: 1px solid var(--color-slate-300, #D1D1DF);
+background: var(--color-white, #FAFAFA);
+}
+
+.imgCollage{
+    display: grid;
+    gri
+}
