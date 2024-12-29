@@ -1,128 +1,151 @@
-body{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "red hat display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.hero {
+  display: flex;
+  gap: 10px;
+  max-width: 433.003px;
+}
+
+.hero img {
+  width: 208.053px;
+}
+
+.text-content {
+  max-width: 305px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+.text-content h2 {
+  color: var(--color-slate-900, #28283d);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 110%; /* 44px */
+}
+
+.text-content p {
+  color: var(--color-slate-600, #87879d);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+
+.text-content .button-container {
+  display: flex;
+  flex-direction: column;
+  width: 193px;
+  gap: 1rem;
+  align-items: center;
+}
+
+.text-content .button-container .button-1 {
+  padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+  gap: var(--spacing-100, 8px);
+  border-radius: 29px;
+  border: none;
+  color: var(--color-white, #fafafa);
+  font-feature-settings: "liga" off, "clig" off;
+
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%; /* 24px */
+  background: var(--color-cyan-600, #4d96a9);
+}
+
+.text-content .button-container .button-1 span {
+  color: var(--color-cyan-300, #8fe3f9);
+}
+
+.text-content .button-container .button-2 {
+  display: flex;
+  padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+  flex-direction: column;
+  border-radius: 29px;
+  background: var(--color-purple-600, #855fb1);
+  color: var(--color-white, #fafafa);
+  border: none;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 150%; /* 24px */
+  width: 161px;
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
-.logo{
-    width: 118px;
-height: 28px;
-border: solid;
-align-self: center;
-
+.number{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-container{
-    max-width: 433.003px;
-max-height: 160px;
-border: red;
-display: flex;
-margin-left: 20px;
-
+hr {
+  width: 20px;
+  width: 1px;
+  height: var(--spacing-1000, 80px);
+  background: var(--color-slate-300, #d1d1df);
 }
 
-.first{
-    width: 305px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.num {
+  border-radius: 999px;
+  border: 1px solid var(--color-slate-300, #d1d1df);
+  background: var(--color-white, #fafafa);
+  display: flex;
+  width: var(--spacing-700, 56px);
+  height: var(--spacing-700, 56px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.hero-left, .hero-right{
-width: 216px;
-height: 160px;
+.img-collage{
+  max-width: 311px;
+  max-height: 304px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-h1{
-    color: var(--color-slate-900, #28283D);
-text-align: center;
-
-font-family: "Red Hat Display";
-font-size: 40px;
-font-style: normal;
-font-weight: 900;
-line-height: 110%; /* 44px */
+.img-container{
+  display: flex;
+  gap: 10px;
 }
 
-p{
-    color: var(--color-slate-600, #87879D);
-text-align: center;
-font-feature-settings: 'liga' off, 'clig' off;
-
-/* tablet/text-preset-4 */
-font-family: "Red Hat Display";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 150%; /* 24px */
+.img-container img{
+  width: 147px;
+  border-radius: var(--spacing-100, 8px);
+  height: 144px;
 }
 
-.btn-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.btn1{
-    display: flex;
-    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-100, 8px);
-    border-radius: 29px;
-background: var(--color-cyan-600, #4D96A9);
-color: white;
-}
-
-.btn2{
-    display: flex;
-    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-100, 8px);
-    border-radius: 29px;
-background: var(--color-purple-600, #855FB1);
-color: white;
-}
-
-.lc{
-    display: flex;
-    flex-direction: column;
-    border: solid red;
-    align-items: center;
-    margin-top: 60px;
-}
-
-.line{
-    width: 1px;
-    height: var(--spacing-1000, 80px);
-    background: var(--color-slate-300, #D1D1DF);
-}
-
-.circle{
-    display: flex;
-width: var(--spacing-700, 56px);
-height: var(--spacing-700, 56px);
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border-radius: 999px;
-border: 1px solid var(--color-slate-300, #D1D1DF);
-background: var(--color-white, #FAFAFA);
-}
-
-.imgCollage{
-    display: grid;
-    gri
-}
