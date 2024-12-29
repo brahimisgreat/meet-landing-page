@@ -98,14 +98,14 @@ header {
   width: 161px;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
 }
 
-.number{
+.number {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,7 +130,7 @@ hr {
   align-items: center;
 }
 
-.img-collage{
+.img-collage {
   max-width: 311px;
   max-height: 304px;
   display: flex;
@@ -138,14 +138,56 @@ hr {
   gap: 10px;
 }
 
-.img-container{
+.img-container {
   display: flex;
   gap: 10px;
 }
 
-.img-container img{
+.img-container img {
   width: 147px;
   border-radius: var(--spacing-100, 8px);
   height: 144px;
 }
 
+.content {
+  max-width: 311px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.content h3 {
+  color: var(--color-cyan-600, #4d96a9);
+  text-align: center;
+
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 110%; /* 13.2px */
+  letter-spacing: 4px;
+}
+
+.content h2 {
+  color: var(--color-slate-900, #28283d);
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.content p {
+  color: var(--color-slate-600, #87879d);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+footer{
+  position: relative;
+}
+footer .hero {
+background: url('./image-footer.jpg' ) no-repeat center center;
+width: 375px;
+height: 374px;
+}
