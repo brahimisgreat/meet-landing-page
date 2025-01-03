@@ -132,6 +132,12 @@ header {
   }
 }
 
+@media(min-width: 1024px){
+  header{
+    border: 1px solid red;
+  }
+}
+
 
 
 main {
@@ -222,7 +228,6 @@ hr {
 @media(min-width: 768px) {
   main{
     width: 680px;
-    border: solid 1px red;
   }
 
   .img-collage{
@@ -234,7 +239,6 @@ hr {
 
   .content{
     width: 445px;
-    border: solid 1px red;
   }
 
   .content h3{
@@ -271,9 +275,13 @@ footer .hero {
   height: 374px;
 }
 
-footer .hero img {
+footer .hero .footer {
   width: 100%;
   height: 100%;
+}
+
+footer .hero .footer-tablet{
+  display: none;
 }
 
 .mask {
@@ -320,4 +328,25 @@ line-height: 110%;
   background: var(--color-purple-600, #855fb1);
   border: none;
   color: white;
+}
+
+@media(min-width: 768px){
+  footer .hero .footer {
+   display: none;
+  }
+  
+  footer .hero .footer-tablet{
+    display: block;
+    width: 100%;
+    height: 374px;
+  }
+
+  .text-content2 p{
+    width: 445px;
+  }
+
+  .text-content2 h2{
+    width: 545px;
+    font-size: 36px;
+  }
 }
